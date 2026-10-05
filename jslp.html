@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Practice</title>
+    <link rel="stylesheet" href="jslp.css">
+</head>
+<body>
+
+    <h1>JavaScript Practice</h1>
+    <p class="subtitle">Conditions, Switch, Operators and Type Conversion</p>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>1. Check Number</h2>
+            <input type="number" id="n1" value="110">
+            <button onclick="one()">Check</button>
+            <p id="r1">Result </p>
+        </div>
+
+        <div class="card">
+            <h2>2. Divisible by 10</h2>
+            <input type="number" id="n2" value="100">
+            <button onclick="two()">Check</button>
+            <p id="r2">Result </p>
+        </div>
+
+        <div class="card">
+            <h2>3. AND Operator</h2>
+            <input type="number" id="n3" value="10" placeholder="First number">
+            <input type="number" id="n4" value="12" placeholder="Second number">
+            <button onclick="three()">Check</button>
+            <p id="r3">Result </p>
+        </div>
+
+        <div class="card">
+            <h2>4. Truthy or Falsy</h2>
+            <button onclick="four()">Check document.all</button>
+            <p id="r4">Result </p>
+        </div>
+
+        <div class="card">
+            <h2>5. If / Else If / Else</h2>
+            <input type="number" id="n5" value="1" placeholder="Enter 1, 2 or 3">
+            <button onclick="five()">Check</button>
+            <p id="r5">Result</p>
+        </div>
+
+        <div class="card">
+            <h2>6. Independent If Conditions</h2>
+            <button onclick="six()">Execute</button>
+            <p id="r6">Result</p>
+        </div>
+
+        <div class="card">
+            <h2>7. Nested If Conditions</h2>
+            <input type="number" id="n7" value="10">
+            <button onclick="seven()">Check</button>
+            <p id="r7">Result </p>
+        </div>
+
+        <div class="card">
+            <h2>8. Positive Number and Even Check</h2>
+            <input type="number" id="n8" value="10">
+            <button onclick="eight()">Check</button>
+            <p id="r8">Result </p>
+        </div>
+
+        <div class="card">
+            <h2>9. Switch Case</h2>
+            <input type="number" id="n9" value="2">
+            <button onclick="nine()">Execute</button>
+            <p id="r9">Result</p>
+        </div>
+
+        <div class="card">
+            <h2>10. Switch with String and Number</h2>
+            <input type="text" id="n10" value="10">
+            <button onclick="ten()">Execute</button>
+            <p id="r10">Result</p>
+        </div>
+
+        <div class="card">
+            <h2>11. Simple Calculator</h2>
+            <input type="number" id="n11" value="10" placeholder="First number">
+            <input type="number" id="n12" value="5" placeholder="Second number">
+
+            <select id="op">
+                <option value="+">Addition (+)</option>
+                <option value="-">Subtraction (-)</option>
+                <option value="*">Multiplication (*)</option>
+                <option value="/">Division (/)</option>
+                <option value="%">Remainder (%)</option>
+            </select>
+
+            <button onclick="eleven()">Calculate</button>
+            <p id="r11">Result</p>
+        </div>
+
+        <div class="card">
+            <h2>12. Switch Fall-Through</h2>
+            <input type="number" id="n13" value="2">
+            <button onclick="twelve()">Execute</button>
+            <p id="r12">Result</p>
+        </div>
+
+        <div class="card">
+            <h2>13. String Concatenation</h2>
+            <input type="text" id="fname" value="FullStack" placeholder="First name">
+            <input type="text" id="mname" value="Experts" placeholder="Middle name">
+            <input type="text" id="lname" value="Academy" placeholder="Last name">
+            <button onclick="thirteen()">Join Strings</button>
+            <p id="r13">Result </p>
+        </div>
+
+        <div class="card">
+            <h2>14. String and Number Addition</h2>
+            <input type="text" id="n14" value="10">
+            <input type="number" id="n15" value="5">
+            <button onclick="fourteen()">Calculate</button>
+            <p id="r14">Result</p>
+        </div>
+
+        <div class="card">
+            <h2>15. parseInt()</h2>
+            <input type="text" id="n16" value="10">
+            <button onclick="fifteen()">Convert</button>
+            <p id="r15">Result</p>
+        </div>
+
+        <div class="card">
+            <h2>16. parseFloat() and parseInt()</h2>
+            <input type="text" id="n17" value="10.22">
+            <button onclick="sixteen()">Convert</button>
+            <p id="r16">Result </p>
+        </div>
+
+        <div class="card">
+            <h2>17. Number(), parseInt() and parseFloat()</h2>
+            <input type="text" id="n18" value="10.88px">
+            <button onclick="seventeen()">Convert</button>
+            <p id="r17">Result </p>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="jslp.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addTwo()
+        {
+        var n1 = parseInt(document.getElementById("num1").value);
+        var n2 = parseInt(document.getElementById("num2").value);
+        //  var n3 = parseInt(document.getElementById("num3").value);
+        var res = document.getElementById("res");
+            res.value = n1+n2;
+        // document.write(n1+n2);
+        // console.log(n1+n2);
+        // return false;
+
+        }
+        function sub()
+        {
+              var n1 = parseInt(document.getElementById("num1").value);
+        var n2 = parseInt(document.getElementById("num2").value);
+        
+        var res = document.getElementById("res");
+            res.value = n1-n2;
+        }
+
+
+        // function display()
+        // {
+        //     var a = document.getElementById("name").value;
+        //     // document.write("My name is:"+ a); 
+        //     console.log("My name is:"+ a);
+        //     return false;
+        // }
+
+    </script>
+</head>
+<body>
+    <!-- <label>Enetr your 1st number:</label>
+    <input type="text" id="num1" placeholder="Enetr your 1st number"/>
+    <br/>
+    <label >Enter uour 2nd number</label>
+    <input type="text" id="num2" placeholder="enter your 2nd number"/>
+    <button onclick="addTwo()">Add</button> -->
+<!-- 
+    <form onsubmit="return display()" >
+        <label >Enter youe name</label>
+        <input type="text" id="name" placeholder="enter your name">
+        <input type="submit" value="display">
+    </form> -->
+
+  
+        <label>Enetr your 1st number:</label>
+    <input type="text" id="num1" placeholder="Enetr your 1st number"/>
+    <br/>
+    <label >Enter uour 2nd number</label>
+    <input type="text" id="num2" placeholder="enter your 2nd number"/>
+      <br/>
+
+    <!-- <label>Enter your 3rd number</label>
+    <input type="text" id="num3" placeholder="enter your 3rd number"/>
+      <br/> -->
+    <button onclick="addTwo()">Add</button>
+    <button onclick="sub()">Substract</button>
+
+    <label >Result</label>
+    <input type="text" id="res" readonly>
+    
+</body>
+</html>

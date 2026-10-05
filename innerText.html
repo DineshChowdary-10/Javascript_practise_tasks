@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Welcome to full stacks</h1>
+    <p id="para1"><span>THSI IS MY TEXT</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aperiam?</p>
+    <!-- <button onclick="access()">Access the para1</button> -->
+    <button onclick="changeText()">Chnage txt</button>
+    <button onclick="changeTag()">Chnage tag</button>
+    <script>
+        // function access()
+        // {
+        //     var t = document.getElementById("para1");
+        //     myText = t.innerText;
+        //     textHmtl = t.innerHTML;
+        //     console.log(myText);
+        //     console.log(textHmtl);
+            
+        // }
+
+        function changeText()
+        {
+            document.getElementById("heading").innerText = "<h1>Welcome to js world</h1> ";
+        }
+        function changeTag()
+        {
+            document.getElementById("heading").innerHTML = "<h1>Welcome to js world</h1>";
+        }
+    </script>
+</body>
+</html>
