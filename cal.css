@@ -1,0 +1,41 @@
+body {
+    
+    background-color: lightblue;
+}
+
+div {
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    margin: 5px;
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+    width: 40px;
+}
+#res
+{
+    width: 150px;
+}
+
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: green;
+    color: white;
+    border: none;
+    width: 150px;
+}

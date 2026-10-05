@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div>
+    <h1 id="heading">Arethematic operations</h1>
+    <label>Enetr your first number</label>
+    
+    <input type="text" id="num1"/>
+    <br/>
+    <label>Enetr your second number</label>
+    <input type="text" id="num2">
+    <br/>
+    <label>RESULT</label>
+    <input type="text" id="res" readonly/>
+    <br/>
+
+    <button onclick="add()" id="b1">ADD</button>
+    <button onclick="substract()" id="b2">SUBSTRACT</button> <br/>
+    <button onclick="multiply()" id="b3">MULTIPLY</button>
+    <button onclick="modulus()" id="b4">MODULUS</button><br/>
+    <button onclick="expo()" id="b5">EXPONENTIAL</button>
+    <button onclick="divide()" id="b6">DIVIDE</button><br/>
+
+    </div>
+    <script>
+       
+
+        function add()
+        {
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var res = document.getElementById("res");
+            res.value = n1+n2;
+        }
+
+         function substract()
+        {
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var res = document.getElementById("res");
+            res.value = n1-n2;
+        }
+
+         function multiply()
+        {
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var res = document.getElementById("res");
+            res.value = n1*n2;
+        }
+
+         function modulus()
+        {
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var res = document.getElementById("res");
+            res.value = n1%n2;
+        }
+
+         function expo()
+        {
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var res = document.getElementById("res");
+            res.value = n1**n2;
+        }
+
+         function divide()
+        {
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var res = document.getElementById("res");
+            res.value = n1/n2;
+        }
+
+        document.getElementById("heading").style.color = "green";
+
+    </script>
+</body>
+</html>
