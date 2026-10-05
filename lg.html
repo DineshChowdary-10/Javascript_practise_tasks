@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basic Problems</title>
+    <link rel="stylesheet" href="lg.css">
+</head>
+<body>
+
+    <!-- 1. Average of 3 Numbers without DOM -->
+    <div class="problem" id="average">
+        <h2>1. Average of 3 Numbers</h2>
+        <input type="number" id="a1" placeholder="First number">
+        <br>
+        <input type="number" id="a2" placeholder="Second number">
+        <br>
+        <input type="number" id="a3" placeholder="Third number">
+        <br>
+        <button onclick="average()">Calculate</button>
+        <br>
+        <p id="avgResult"></p>
+    </div>
+
+    <!-- 2. Average of 3 Numbers using DOM -->
+    <div class="problem" id="averageDOM">
+        <h2>2. Average of 3 Numbers (DOM)</h2>
+        <input type="number" id="num1" placeholder="First number">
+        <br>
+        <input type="number" id="num2" placeholder="Second number">
+        <br>
+        <input type="number" id="num3" placeholder="Third number">
+        <br>
+        <button onclick="averages()">Average</button>
+        <br>
+        <input type="text" id="res" placeholder="Result" readonly>
+    </div>
+
+    <!-- 3. Sum of First N Natural Numbers -->
+    <div class="problem" id="sumNatural">
+        <h2>3. Sum of First N Natural Numbers</h2>
+        <input type="number" id="NaturalNumber" placeholder="Enter n">
+        <br>
+        <button onclick="sumofN()">Calculate Sum</button>
+        <br>
+        <input type="text" id="sumResult" placeholder="Result" readonly>
+    </div>
+
+    <!-- 4. Average of First N Natural Numbers -->
+    <div class="problem" id="averageNatural">
+        <h2>4. Average of First N Natural Numbers</h2>
+        <input type="number" id="numberValue" placeholder="Enter n">
+        <br>
+        <button onclick="AveragefNnatural()">Calculate Average</button>
+        <br>
+        <input type="text" id="ANN" placeholder="Result" readonly>
+    </div>
+
+    <!-- 5. Profit Percentage -->
+    <div class="problem" id="profit">
+        <h2>5. Profit Percentage</h2>
+        <input type="number" id="cp" placeholder="Cost Price">
+        <br>
+        <input type="number" id="sp" placeholder="Selling Price">
+        <br>
+        <button onclick="profit()">Calculate Profit %</button>
+        <br>
+        <input type="text" id="profitResult" placeholder="Result" readonly>
+    </div>
+
+    <!-- 6. Simple Interest -->
+    <div class="problem" id="simpleInterest">
+        <h2>6. Simple Interest</h2>
+        <input type="number" id="principal" placeholder="Principal">
+        <br>
+        <input type="number" id="rate" placeholder="Rate">
+        <br>
+        <input type="number" id="time" placeholder="Time in years">
+        <br>
+        <button onclick="simpleInterest()">Calculate SI</button>
+        <br>
+        <input type="text" id="siResult" placeholder="Result" readonly>
+    </div>
+
+    <!-- 7. Missing Angle of a Triangle -->
+    <div class="problem" id="missingAngle">
+        <h2>7. Missing Angle of a Triangle</h2>
+        <input type="number" id="angle1" placeholder="First angle">
+        <br>
+        <input type="number" id="angle2" placeholder="Second angle">
+        <br>
+        <button onclick="missingAngle()">Find Missing Angle</button>
+        <br>
+        <input type="text" id="angleResult" placeholder="Result" readonly>
+    </div>
+
+    <!-- 8. Last Digit of a Number -->
+    <div class="problem" id="lastDigit">
+        <h2>8. Last Digit of a Number</h2>
+        <input type="number" id="lastNum" placeholder="Enter number">
+        <br>
+        <button onclick="lastDigit()">Find Last Digit</button>
+        <br>
+        <input type="text" id="lastResult" placeholder="Result" readonly>
+    </div>
+
+    <!-- 9. Remove Last Digit -->
+    <div class="problem" id="removeLastDigit">
+        <h2>9. Remove Last Digit of a Number</h2>
+        <input type="number" id="removeNum" placeholder="Enter number">
+        <br>
+        <button onclick="removeLastDigit()">Remove Last Digit</button>
+        <br>
+        <input type="text" id="removeResult" placeholder="Result" readonly>
+    </div>
+
+    <!-- 10. First Digit of a 3-Digit Number -->
+    <div class="problem" id="firstDigit3">
+        <h2>10. First Digit of a 3-Digit Number</h2>
+        <input type="number" id="threeDigit" placeholder="Enter 3-digit number">
+        <br>
+        <button onclick="firstDigit3()">Find First Digit</button>
+        <br>
+        <input type="text" id="first3Result" placeholder="Result" readonly>
+    </div>
+
+    <!-- 11. First Digit of a 5-Digit Number -->
+    <div class="problem" id="firstDigit5">
+        <h2>11. First Digit of a 5-Digit Number</h2>
+        <input type="number" id="fiveDigit" placeholder="Enter 5-digit number">
+        <br>
+        <button onclick="firstDigit5()">Find First Digit</button>
+        <br>
+        <input type="text" id="first5Result" placeholder="Result" readonly>
+    </div>
+
+    <!-- 12. Celsius to Fahrenheit -->
+    <div class="problem" id="celsiusToFahrenheit">
+        <h2>12. Celsius to Fahrenheit</h2>
+        <input type="number" id="celsius" placeholder="Celsius">
+        <br>
+        <button onclick="celsiusToFahrenheit()">Convert</button>
+        <br>
+        <input type="text" id="fahrenheitResult" placeholder="Result" readonly>
+    </div>
+
+    <!-- 13. Fahrenheit to Celsius -->
+    <div class="problem" id="fahrenheitToCelsius">
+        <h2>13. Fahrenheit to Celsius</h2>
+        <input type="number" id="fahrenheit" placeholder="Fahrenheit">
+        <br>
+        <button onclick="fahrenheitToCelsius()">Convert</button>
+        <br>
+        <input type="text" id="celsiusResult" placeholder="Result" readonly>
+    </div>
+
+    <!-- 14. Gross Salary -->
+    <div class="problem" id="grossSalary">
+        <h2>14. Gross Salary</h2>
+        <input type="number" id="basic" placeholder="Basic Salary">
+        <br>
+        <input type="number" id="hra" placeholder="HRA">
+        <br>
+        <input type="number" id="da" placeholder="DA">
+        <br>
+        <button onclick="grossSalary()">Calculate Salary</button>
+        <br>
+        <input type="text" id="salaryResult" placeholder="Result" readonly>
+    </div>
+
+    <!-- 15. Swap Using Third Variable -->
+    <div class="problem" id="swapWithTemp">
+        <h2>15. Swap Using Third Variable</h2>
+        <input type="number" id="swapA" placeholder="A">
+        <br>
+        <input type="number" id="swapB" placeholder="B">
+        <br>
+        <button onclick="swapWithTemp()">Swap</button>
+        <br>
+        <input type="text" id="swapTempResult" placeholder="Result" readonly>
+    </div>
+
+    <!-- 16. Swap Without Third Variable -->
+    <div class="problem" id="swapWithoutTemp">
+        <h2>16. Swap Without Third Variable</h2>
+        <input type="number" id="swapX" placeholder="A">
+        <br>
+        <input type="number" id="swapY" placeholder="B">
+        <br>
+        <button onclick="swapWithoutTemp()">Swap</button>
+        <br>
+        <input type="text" id="swapNoTempResult" placeholder="Result" readonly>
+    </div>
+
+    <script src="tasks.js"></script>
+</body>
+</html>
